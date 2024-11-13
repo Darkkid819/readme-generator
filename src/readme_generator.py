@@ -21,4 +21,4 @@ def generate_readme(project_details):
         },
     ])
 
-    return response  # Return the response directly
+    return response

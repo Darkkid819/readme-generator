@@ -1,65 +1,76 @@
-README
-================
-Project Name: [Insert Project Name]
+Here is a professional README.md file based on the provided project details:
 
-Table of Contents
------------------
+# README Generator
+=====================
 
-*   [Introduction](#introduction)
-*   [Key Features](#key-features)
-*   [Installation](#installation)
-*   [Usage](#usage)
-*   [License](#license)
-*   [Contributing](#contributing)
-*   [Authors](#authors)
+A tool designed to generate high-quality README.md files for Python projects.
 
-Introduction
+## Overview
 ------------
 
-This project is a README generator. It takes in project details and generates a professional README.md file.
+The README Generator is a Python-based application that utilizes natural language processing and machine learning techniques to create professional README.md files for Python projects. The tool leverages various libraries, including langchain and ollama, to parse codebases, extract relevant information, and generate human-readable content.
 
-Key Features
-------------
+## Key Features
+----------------
 
-*   Generates a professional README.md file based on project details.
-*   Includes sections for Installation, Usage, and License.
-*   Uses the langchain library for natural language processing tasks.
+*   **Automated README Generation**: Automatically generates high-quality README.md files based on project details.
+*   **Codebase Parsing**: Utilizes the langchain library to parse Python codebases, extracting necessary information for the README file.
+*   **Natural Language Processing**: Employs ollama's natural language processing capabilities to generate human-readable content.
 
-Installation
-------------
-
-To install the required libraries, run the following command:
-```bash
-pip install -r requirements.txt
-```
-This will install the necessary dependencies, including `langchain` and `ollama`.
-
-Usage
------
-
-To generate a README.md file, simply run the script using the following command:
-```bash
-python main.py --output /path/to/output
-```
-Replace `/path/to/output` with the desired path for your output file.
-
-License
--------
-
-This project is licensed under the [MIT License](LICENSE).
-
-Contributing
-------------
-
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
-
-Authors
--------
-
-*   [Your Name](https://github.com/your-username)
-*   [Organization/Company Name](https://www.your-organization.com)
-
-Acknowledgments
+## Installation
 ---------------
 
-Special thanks to the langchain community for providing the `DirectoryLoader` and `RecursiveCharacterTextSplitter` classes.
+To install the README Generator, follow these steps:
+
+1.  Clone or download the repository: `git clone https://github.com/your-username/readme-generator.git`
+2.  Navigate into the project directory: `cd readme-generator`
+3.  Install the required libraries by running `pip install -r requirements.txt`
+
+## Usage
+-----
+
+To generate a README.md file for your Python project, run the following command:
+
+```bash
+python main.py --project-details="your-project-name"
+```
+
+Replace `"your-project-name"` with your actual project name.
+
+## Key Files and Functions
+-------------------------
+
+The key files and functions of this project are as follows:
+
+*   `main.py`: The entry point of the application, responsible for parsing command-line arguments and generating the README file.
+*   `src/code_parser.py`: Contains the codebase parser function that utilizes langchain to extract necessary information from Python codebases.
+*   `src/file_writer.py`: Responsible for writing the generated content to the output directory.
+*   `src/readme_generator.py`: The main script responsible for generating the README.md file.
+
+## Supported Libraries
+----------------------
+
+The following libraries are used in this project:
+
+*   **langchain**: A Python library that provides a framework for natural language processing and machine learning applications.
+*   **ollama**: A Python library developed by langchain, providing capabilities for natural language understanding and generation.
+
+## Limitations
+--------------
+
+This application is designed to generate README.md files based on specific project details. However, its limitations include:
+
+*   **Project Complexity**: The tool may struggle with complex projects that require custom implementation or handling of edge cases.
+*   **Limited Domain Knowledge**: The generator relies on pre-trained models and may not always capture nuances of domain-specific terminology.
+
+## Contributing
+------------
+
+Contributions to this project are welcome. Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on how to get involved.
+
+## License
+-------
+
+This project is licensed under the MIT License, which can be found in the [LICENSE](LICENSE) file.
+
+Note: Replace `"your-username"` with your actual GitHub username. Also, make sure to update the `requirements.txt` file and create a `CONTRIBUTING.md` file according to your project's specific needs.

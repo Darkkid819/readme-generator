@@ -21,5 +21,4 @@ def generate_readme(project_details):
         },
     ])
 
-    print(response)  # Add this to inspect the response structure
-    return response
+    return response  # Return the response directly

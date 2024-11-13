@@ -12,7 +12,7 @@ def parse_codebase(path):
     project_details = {
         "project_name": path.split('/')[-1],
         "files": [doc.metadata["source"] for doc in documents],
-        "key_functions": [doc.page_content[:200] for doc in split_docs[:5]]  # Shorten for demo
+        "key_functions": [doc.page_content[:200] for doc in split_docs[:5]]
     }
 
     return project_details
